@@ -7,10 +7,10 @@
 /* Studio Obsidian — fixed four-color design system (Blueprint Section 12).
    No additional accent colors are introduced anywhere in this project. */
 :root {
-  --color-background: #1b262c;
-  --color-foreground: #bbe1fa;
-  --color-primary: #0f4c75;
-  --color-hover: #3282b8;
+  --color-background: #1E1A17;
+  --color-foreground: #F2E9DD;
+  --color-primary: #8B4A2B;
+  --color-hover: #C17F45;
 }
 
 @theme inline {
