@@ -1,0 +1,45 @@
+@import "tailwindcss";
+
+/* Fonts are now loaded via next/font/local in app/layout.tsx (proper
+   preloading, no render-blocking @import chain) — this file only defines
+   the design tokens themselves. */
+
+/* Studio Obsidian — fixed four-color design system (Blueprint Section 12).
+   No additional accent colors are introduced anywhere in this project. */
+:root {
+  --color-background: #1b262c;
+  --color-foreground: #bbe1fa;
+  --color-primary: #0f4c75;
+  --color-hover: #3282b8;
+}
+
+@theme inline {
+  --color-background: var(--color-background);
+  --color-foreground: var(--color-foreground);
+  --color-primary: var(--color-primary);
+  --color-hover: var(--color-hover);
+
+  --font-display: var(--font-fraunces);
+  --font-body: var(--font-plex-sans);
+  --font-mono: var(--font-plex-mono);
+}
+
+body {
+  background: var(--color-background);
+  color: var(--color-foreground);
+  font-family: var(--font-body);
+}
+
+/* Comfortable body-copy measure per Blueprint Section 14 (~60-75 characters) */
+.prose-measure {
+  max-width: 68ch;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
