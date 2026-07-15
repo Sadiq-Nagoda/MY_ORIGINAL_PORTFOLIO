@@ -25,7 +25,12 @@ export const footballArenaBooking: Project = {
   // football-arena-booking.ts
   screenshots: {
    state: "available",
-   images: ["/images/projects/football-arena-booking/1.png"],
+   images: [
+    "/images/projects/football-arena-booking/1.png",
+    "/images/projects/football-arena-booking/2.png",
+    "/images/projects/football-arena-booking/3.png",
+    "/images/projects/football-arena-booking/4.png",
+  ],
 },
   timeline: "MVP in progress",
 };

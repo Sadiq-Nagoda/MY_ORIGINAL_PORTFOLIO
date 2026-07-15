@@ -25,7 +25,12 @@ export const resultManagementSystem: Project = {
 // result-management-system.ts
   screenshots: {
     state: "available",
-    images: ["/images/projects/result-management-system/1.png"],
+    images: [
+      "/images/projects/result-management-system/1.png",
+      "/images/projects/result-management-system/2.png",
+      "/images/projects/result-management-system/3.png",
+      "/images/projects/result-management-system/4.png",
+    ],
 },
   timeline: "Secondary-school version built first; university-adapted version followed",
 };
