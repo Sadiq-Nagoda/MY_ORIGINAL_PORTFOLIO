@@ -22,6 +22,10 @@ export const aais: Project = {
   stack: ["Python", "Flask", "Claude API", "JSON", "HTML", "CSS", "JavaScript"],
   githubUrl: "https://github.com/Sadiq-Nagoda",
   repoState: "in-development",
-  screenshots: { state: "pending" },
+  // aais.ts
+  screenshots: {
+    state: "available",
+    images: ["/images/projects/aais/1.png"],
+},
   timeline: "In development — public deadline August 25, 2026",
 };

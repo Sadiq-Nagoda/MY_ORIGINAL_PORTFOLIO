@@ -5,15 +5,20 @@ export const snakeGame: Project = {
   title: "Snake Game",
   category: "python-journey",
   status: "Learning Project",
-  summary: "A classic Snake implementation using Python's Turtle graphics, built with an object-oriented structure.",
+  summary:
+    "A classic Snake game built with Python's Turtle graphics, featuring smooth movement, food collection, score tracking, and object-oriented design.",
   problem:
-    "An exercise in object-oriented design: modeling the snake, food, and scoreboard as separate classes rather than one script tracking everything in loose variables.",
+    "Develop a playable Snake game where the snake moves continuously, grows after eating food, detects collisions with walls and its own body, and keeps track of the player's score.",
   architecture:
-    "Turtle graphics for rendering, with distinct classes for the snake body, food spawning, and score tracking, coordinated by a main game loop.",
+    "Organized into separate classes for the Snake, Food, and Scoreboard, all coordinated by a main game loop. Turtle graphics handles rendering, while collision detection and movement logic are encapsulated within their respective classes.",
   lessons:
-    "Splitting the game into classes made collision detection and growth logic much easier to reason about than a single-file, single-function version would have been.",
-  stack: ["Python", "Turtle"],
+    "Learned how object-oriented programming improves game development by separating responsibilities into reusable classes, simplifying collision detection, animation, state management, and overall code organization.",
+  stack: ["Python", "Turtle", "Object-Oriented Programming"],
   githubUrl: "https://github.com/Sadiq-Nagoda",
   repoState: "source-available",
-  screenshots: { state: "pending" },
+// snake-game.ts
+  screenshots: {
+    state: "available",
+    images: ["/images/projects/snake-game/1.png"],
+  },
 };

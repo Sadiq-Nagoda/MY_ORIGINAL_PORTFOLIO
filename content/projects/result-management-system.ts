@@ -22,6 +22,10 @@ export const resultManagementSystem: Project = {
   stack: ["Python", "Flask", "Pandas", "ReportLab", "SQL"],
   githubUrl: "https://github.com/Sadiq-Nagoda",
   repoState: "source-available",
-  screenshots: { state: "pending" },
+// result-management-system.ts
+  screenshots: {
+    state: "available",
+    images: ["/images/projects/result-management-system/1.png"],
+},
   timeline: "Secondary-school version built first; university-adapted version followed",
 };

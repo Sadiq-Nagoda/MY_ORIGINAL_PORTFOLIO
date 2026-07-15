@@ -22,6 +22,10 @@ export const footballArenaBooking: Project = {
   stack: ["Python", "Flask", "SQLAlchemy", "Paystack API", "SQL"],
   githubUrl: "https://github.com/Sadiq-Nagoda",
   repoState: "source-available",
-  screenshots: { state: "pending" },
+  // football-arena-booking.ts
+  screenshots: {
+   state: "available",
+   images: ["/images/projects/football-arena-booking/1.png"],
+},
   timeline: "MVP in progress",
 };

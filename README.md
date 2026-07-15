@@ -19,14 +19,13 @@ npm run dev
 - `npm run a11y` — runs a real axe-core accessibility audit against a running server. Start the server first (`npm run start` in one terminal), then run this in another.
 - `npm run screenshot` — captures real screenshots of key pages at desktop and mobile viewports (`npx playwright install chromium` once, first time only; then start the server before running this, same as `a11y`).
 
-## Regenerating the resume PDF
+## Resume
 
-The downloadable PDF at `public/resume.pdf` is generated from `scripts/generate_resume_pdf.py`, which mirrors `content/resume.ts` exactly — edit the data in one place conceptually (both files) rather than the PDF directly.
+The downloadable resume is stored at:
 
-```bash
-pip install -r scripts/requirements.txt
-python3 scripts/generate_resume_pdf.py
-```
+public/resume.pdf
+
+To update the resume, replace `public/resume.pdf` with the latest version.
 
 ## Environment variables
 

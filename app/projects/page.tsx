@@ -3,7 +3,11 @@ import { Container } from "@/components/primitives/Container";
 import { Reveal } from "@/components/primitives/Reveal";
 import { ProjectFeature } from "@/components/content/ProjectFeature";
 import { PythonJourneyEntry } from "@/components/content/PythonJourneyEntry";
-import { flagshipProject, majorProjects, pythonJourneyProjects } from "@/content/projects";
+import {
+  flagshipProject,
+  majorProjects,
+  pythonJourneyProjects,
+} from "@/content/projects";
 
 export const metadata: Metadata = {
   title: "Projects",
@@ -16,7 +20,9 @@ export default function Projects() {
     <section className="py-20 md:py-28">
       <Container>
         <Reveal>
-          <h1 className="font-display text-4xl md:text-5xl font-medium">Projects</h1>
+          <h1 className="font-display text-4xl md:text-5xl font-medium">
+            Projects
+          </h1>
           <p className="font-body text-lg text-foreground/80 mt-6 max-w-2xl prose-measure leading-relaxed">
             Each entry here documents the problem, the constraints, and what
             I&rsquo;d do differently &mdash; not just a finished screenshot. Some
@@ -46,16 +52,26 @@ export default function Projects() {
             <h2 className="font-display text-2xl md:text-3xl font-medium">
               Python Journey
             </h2>
+
             <p className="font-body text-foreground/80 mt-3 max-w-2xl prose-measure leading-relaxed">
-              Curated highlights from Angela Yu&rsquo;s 100 Days of Python &mdash;
-              the pieces that represent an actual step up in what I could
-              build, not every exercise along the way.
+              Curated highlights from Angela Yu&rsquo;s 100 Days of Python
+              &mdash; the pieces that represent an actual step up in what I
+              could build, not every exercise along the way.
+            </p>
+
+            {/* DEBUG */}
+            <p className="mt-4 font-mono text-sm text-red-500">
+              Total Python Projects: {pythonJourneyProjects.length}
             </p>
           </Reveal>
+
           <Reveal delay={0.05}>
             <ul className="mt-8">
               {pythonJourneyProjects.map((project) => (
-                <PythonJourneyEntry key={project.slug} project={project} />
+                <PythonJourneyEntry
+                  key={project.slug}
+                  project={project}
+                />
               ))}
             </ul>
           </Reveal>
